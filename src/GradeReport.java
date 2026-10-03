@@ -1,7 +1,7 @@
 public class GradeReport extends Report {
     private final int[] grades;
 
-    public GradeReport(String id, int[] grades, Formatter formatter) {
+    public GradeReport(int[] grades, Formatter formatter) {
         super(formatter);
         this.grades = grades.clone();
     }
