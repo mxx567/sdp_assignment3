@@ -2,7 +2,7 @@ public class AttendanceReport extends Report {
     private final int attended;
     private final int total;
 
-    public AttendanceReport(String id, int attended, int total, Formatter formatter) {
+    public AttendanceReport(int attended, int total, Formatter formatter) {
         super(formatter);
         this.attended = attended;
         this.total = total;
