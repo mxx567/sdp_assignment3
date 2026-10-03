@@ -52,6 +52,16 @@ public class Tests {
             System.out.println("After: " + after);
         }
 
+        // T6
+        AttendanceReport attendanceMarkdown = new AttendanceReport(3, 4, new MarkdownFormatter());
+
+        check("T6 AttendanceReport + MarkdownFormatter", attendanceMarkdown.execute(), "**Attendance: 3 of 4 sessions attended (75%)**");
+
+        // T7
+        GradeReport gradeMarkdown = new GradeReport(new int[]{70, 80, 90}, new MarkdownFormatter());
+
+        check("T7 GradeReport + MarkdownFormatter", gradeMarkdown.execute(), "**Grade average: 80**");
+
         System.out.println("SUMMARY: " + passed + "/5 PASS");
 
         return String.format("PASSED: %d, FAILED: %d", passed, failed);
