@@ -62,7 +62,7 @@ public class Tests {
 
         check("T7 GradeReport + MarkdownFormatter", gradeMarkdown.execute(), "**Grade average: 80**");
 
-        System.out.println("SUMMARY: " + passed + "/5 PASS");
+        System.out.println("SUMMARY: " + passed + "/7 PASS");
 
         return String.format("PASSED: %d, FAILED: %d", passed, failed);
     }
