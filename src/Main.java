@@ -1,4 +1,6 @@
-void main() {
-    Tests tests = new Tests();
-    System.out.println(tests.run());
+public class Main {
+    public static void main(String[] args){
+        Tests t = new Tests();
+        t.run();
+    }
 }
